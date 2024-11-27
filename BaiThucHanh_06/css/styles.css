@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 13px;
+}
+body {
+    min-height: 1500px;
+    background-image: url(../image/bg-top.jpg),url(../image/bg-bottom.jpg);
+    background-repeat: no-repeat , no-repeat;
+    background-position: top center , bottom center;
+    background-color: #f2f2f2;
+    background-size: contain , contain;
+}
+.header{
+    width: 1200px;
+    margin: 0 auto;
+}
+#menu{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    height: 55px;
+    align-items: center;
+}
+#menu li{
+    /* border: 2px solid #fff; */
+    flex-grow: 1;
+    text-align: center;
+}
+#menu li + li{
+    border-left: 1px solid rgba(255, 255, 255, 0.6);
+  
+}
+#menu .space{
+    width: 200px;
+}
+#menu a{
+    color: #fff;
+    font-size: 1.1rem;
+    font-family: Cambria;
+}
+#section-1{
+    border: 2px solid #112141;
+    width: 980px;
+    height: 250px;
+    margin: 0 auto;
+    margin-top: 520px;
+    background-color: #112141;
+    position: relative;
+    display: grid;
+    grid-template-columns: 240px 490px auto;
+}
+#long-den{
+    position: absolute;
+    top: 0;
+    left:-80px;
+    z-index: 999;
+}
+#section-1 > div {
+   border: 2px solid #fff;
+}
+#left-buttom{
+    display: grid;
+    grid-template-rows:126px 62px 62px ;
+    gap: 3px;
+}
+#tai-game{
+    background-image: url(../image/btn_taigame.jpg);
+}
+#dang-ky{
+    background-image: url(../image/buttons-left.png);
+    background-position: 0 -2px;
+}
+#dang-ky:hover{
+    background-position: -248px -2px;
+    opacity: 1;
+}
+#nap-the{
+    background-image: url(../image/buttons-left.png);
+    background-position: 0 -66px;
+}
+#nap-the:hover{
+    background-position: -248px -66px;
+    opacity: 1;
+}
+#right-buttom{
+    display: grid;
+    grid-template-rows: 110px 110px 30px;
+    gap: 2px;
+    grid-template-columns: 125px 125px;
+}
+#ky-bao{
+    background-image:url(../image/buttons-right.png) ;
+    background-position: 0 10px;
+}
+#ho-tro{
+    background-image:url(../image/buttons-right.png) ;
+    background-position: -228px;
+}
